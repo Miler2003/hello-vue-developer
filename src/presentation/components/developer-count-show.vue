@@ -1,6 +1,8 @@
 <script setup>
+import {toRef, toRefs} from "vue";
+
 const props = defineProps({developerCount: {type: Number, required: true}});
-const {developerCount} = props;
+const {developerCount} = toRefs(props);
 </script>
 
 <template>
